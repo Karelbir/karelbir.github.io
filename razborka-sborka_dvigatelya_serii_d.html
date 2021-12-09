@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Как правильно разобрать и собрать двигатель мопеда. Дефектовка и промывка деталей, последовательность действий.">
+    <meta name="keywords" content="сцепление, двигатель, открутить, вал, снять">
+    <title>Разборка и сборка двигателя серии Д</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple.png">  <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="header-logo col-lg-2 col-md-3">
+                <a class="header-logo-link" href="index.html">Мото<span class="header-logo-sub">Ход</span></a>
+            </div>
+            <nav class="header-nav col-lg-10 col-md-9 clearfix" itemscope itemtype="http://schema.org/SiteNavigationElement"> <!--чтобы перенести меню вправо этот див-->
+                <ul class="header-nav-list">
+                    <li class="header-nav-item">
+                        <a class="header-nav-link" href="index.html" itemprop="url"><span itemprop="name">ГЛАВНАЯ</span>
+                        </a>
+                    </li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="blizhnij_svet.html" itemprop="url"><span itemprop="name">Ближний свет</span></a></li>
+                    <li class="header-nav-item"><p class="header-nav-link">МОТОТЕХНИКА<i class="fa fa-chevron-down"></i></p>
+                        <ul class="header-nav-sub">
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="mototexnika.html" itemprop="url"><span itemprop="name">Мототехника</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="ekspluataciya_i_remont_mopeda_riga_13.html" itemprop="url"><span itemprop="name">Эксплуатация и ремонт мопеда Рига-13</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <p class="header-nav-sub-link" itemprop="name">Разборка-сборка двигателя серии "Д"</p>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="sistema_zazhiganija_dvigatelja_d8m.html" itemprop="url"><span itemprop="name">Система зажигания двигателя Д8М</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="moped_i_pdd.html" itemprop="url"><span itemprop="name">Водитель мопеда и Правила дорожного движения 2015</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="lodochnyj_motor_lm_1.html" itemprop="url"><span itemprop="name">Лодочный мотор ЛМ-1</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-nav-item"><p class="header-nav-link">РУКОВОДСТВА<i class="fa fa-chevron-down"></i></p>
+                        <ul class="header-nav-sub">
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="/doc/engine.html" itemprop="url"><span itemprop="name">Руководство по эксплуатации Д8.01.800 РЭ</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="/doc/quide_moped.html" itemprop="url"><span itemprop="name">Руководство по эксплуатации РМЗ-1.4130001-1</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="/doc/lm1.html" itemprop="url"><span itemprop="name">Руководство по эксплуатации лодочного мотора ЛМ-1</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-nav-item"><p class="header-nav-link">ЭНЕРГЕТИКА<i class="fa fa-chevron-down"></i></p>
+                        <ul class="header-nav-sub">
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="ehnergetika.html" itemprop="url"><span itemprop="name">Энергетика</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="proverka_ehlektroschetchika.html" itemprop="url"><span itemprop="name">Проверка электросчетчика</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="ulichnoe_osveshhenie_pochemu_v_derevnyax_temno.html" itemprop="url"><span itemprop="name">Уличное освещение, почему в деревнях темно</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="zamenit_ehl_schetchik.html" itemprop="url"><span itemprop="name">Замена электросчетчика</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="contact.html" itemprop="url"><span itemprop="name">КОНТАКТЫ</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<aside>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12" itemscope itemtype="https://schema.org/WPAdBlock">
+                <a href="https://www.litres.ru/k-p-bykov/mopedy-minibayki-kitayskogo-proizvodstva-viper-alpha-alfamoto-pony-xgjao-xgj-50-3a-fada-musstang-yx-48q-2-irbis-alpha-i-dr-ustroystvo-ekspluataciya-tehnicheskoe-obsluzhivanie-7209502/?lfrom=233431131" target="_blank" title="Покупка книги в магазине" itemprop="url">
+                    <img class="advert" src="/images/advertisement/litres-moped.svg" alt="Книга Мопеды, минибайки китайского производства" itemprop="image">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12" itemscope itemtype="https://schema.org/WPAdBlock">
+                <a href="https://www.litres.ru/k-p-bykov/mopedy-mokiki-kitayskogo-proizvodstva-delta-leader-mustang-i-dr-ustroystvo-ekspluataciya-tehnicheskoe-obsluzhivanie-6600811/?lfrom=233431131" target="_blank" title="Покупка книги в магазине" itemprop="url">
+                    <img class="advert" src="/images/advertisement/litres-mokik.svg" alt="Книга Мопеды, мокики китайского производства: Delta, Leader, Mustang и др" itemprop="image" />
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12" itemscope itemtype="https://schema.org/WPAdBlock">
+                <a href="https://www.litres.ru/k-p-bykov/skutery-kitayskogo-koreyskogo-i-tayvanskogo-proizvodstva-klassa-50-kub-sm-s-perednimi-diskovymi-tormozami-ustroystvo-ekspluataciya-tehnicheskoe-obsluzhivanie-7228051/?lfrom=233431131" target="_blank" title="Покупка книги в магазине" itemprop="url">
+                    <img class="advert" src="/images/advertisement/litres.svg"  alt="Книга Скутеры китайского, корейского и тайваньского производства класса 50 куб" itemprop="image">
+                </a>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<article class="container works">
+    <h1>Разборка-сборка двигателя серии &quot;Д&quot;</h1>
+    <p>&nbsp;&nbsp;Для успешной разборки и предотвращения отрицательных последствий ее, потребуется придерживаться следующих правил.</p>
+    <h2>Правила разборки-сборки</h2>
+    <ol>
+        <li>Соблюдение чистоты. Если песок и другой абразив попадет в мотор, то он навсегда испортится.</li>
+        <li>В случае появления затруднений с разборкой или сборкой, не надо сразу прибегать к помощи молотка. Надо внимательно осмотреть узел &ndash; возможно, случился перекос деталей, или что-то постороннее попало.</li>
+        <li>Съемник всегда лучше, чем молоток.</li>
+        <li>Снятые детали промыть керосином, соляркой. Если пришлось мыть горячей водой с моющим веществом, то детали необходимо сразу насухо протереть и высушить сухим теплом, например печкой, батареей, жаркими солнечными лучами.</li>
+        <li>Перед сборкой сопрягаемые между собой детали смазываются тем же маслом, что применяется для приготовления горючей смеси. Это облегчит процесс сборки, а также обеспечит смазку узлов при первом пуске двигателя.</li>
+        <li>Для выпрессовки и запрессовки подшипников, валов требуется применять проставки из мягкого материала: медь, алюминий, дерево.</li>
+    </ol>
+    <figure class="col-sm-12" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="/images/art/d8m-smal.svg" title="увеличенное изображение в этом же окне" itemprop="contentUrl">
+            <img src="/images/art/d8m-smal.svg" alt="Устройство двигателя серии &quot;Д&quot; для мопеда" itemprop="thumbnailUrl">
+        </a>
+        <figcaption itemprop="caption">Устройство двигателя Д8М</figcaption>
+    </figure>
+    <h2>Разборка двигателя, установленного на раме</h2>
+    <p>Производится в следующем порядке:</p>
+    <ol>
+        <li>Снимается <a href="sistema_zazhiganija_dvigatelja_d8m.html" target="_blank">зажигание</a>. Для этого от прерывателя отсоединить внешний высоковольтный трансформатор, конденсатор, катушку генератора. Затем открутить винты, которыми крепится прерыватель к корпусу через статор генератора и демонтировать его. После выкручивания винта эксцентрика (кулачка), удалить эксцентрик. Необходимо запомнить или отметить в какой прорези находился штифт эксцентрика. Затем снимается подкова (катушка генератора с сердечником), магнит (ротор генератора). Аккуратно открепить с вала шпонку магнита, чтобы она не потерялась. Наконец вынуть все провода из отсека зажигания.</li>
+        <li>Отсоединяются тросики. Тросик сцепления отсоединяется от рычага после выжима его рукой. Выкручивается из стойки регулировочный винт, сквозь который продет тросик и затем тросик вынимается. Тросик газа отсоединяется от карбюратора вместе с дросселем (заслонкой). Дроссель закрыть полиэтиленовым пакетом для предохранения от грязи и пыли. Отверстие в карбюраторе сразу заткнуть чистой тряпкой. Отсоединяется топливный шланг от карбюратора. </li>
+        <li>Отсоединяется глушитель после откручивания гайки на выхлопном патрубке цилиндра.</li>
+        <li>Открепить цепь, разъединив замок.</li>
+        <li>Теперь двигатель надо убрать с рамы, открутив винты крепежных хомутов. Двигатель расположить на чистом столе на стороне зажигания.</li>
+        <li>Открутив две гайки, снять карбюратор. Сразу закрыть отверстие картера чистой тряпкой.</li>
+        <li>Открепить крышку корпуса сцепления. Повернуть рычаг муфты сцепления до упора и в этом положении закрепить его, привязав проволокой за стойку на картере. Затем вставить отвертку между зубьями шестерен сцепления и ведущей на коленчатом валу, открутить винт крепления ведущей шестерни (на коленчатом валу). Демонтировать эту шестерню съемником. Если возникли трудности со снятием, то снимем ее позже. Зафиксировать ведущую звездочку привода цепи, например, подложите деревянный брусок между картером и этой звездочкой. Большой отверткой с прямым наконечником открутить винт-гайку первого диска сцепления. Если возникли трудности, то разрешается помочь легкими ударами молотка, наносимыми по отвертке, чтобы стронуть с места гайку. Вынуть все диски и сухари (вкладыши трения) из корпуса сцепления. Открутить гайку, которая крепит корзину сцепления. Корзину с вала сцепления снять съемником. Внимание &ndash; шпонка! Если возникнут трудности со снятием, то можно оставить ее, снимется позже.</li>
+        <li>Перевернуть двигатель на противоположный бок. Удалить, установленную ранее на рычаг муфты сцепления, проволоку. &nbsp;Отделить крышку ведущей звездочки с этим рычагом. Из вала сцепления вынуть толкатель, отжимной шарик и подпятник (цилиндрик высотой 5 мм). Опять зафиксировав звездочку привода цепи (моторную), открутить гайку крепления звездочки и снять звездочку съемником с вала сцепления. При отсутствии съемника положить двигатель с опорой на 3 точки так, чтобы корзина сцепления имела свободный выход, и через мягкую проставку несильными ударами молотком выбить вал сцепления в сборе с корзиной, правым подшипником и алюминиевым кольцом. Внимание &ndash; шпонка! Корзину положить на тиски. Губки тисков развести так, чтобы только-только проходил подшипник, и выбить через мягкую проставку вал из корзины. Съемником снять с вала подшипник.</li>
+        <li>Демонтировать цилиндр, предварительно открутив четыре гайки. Снять прокладку цилиндра. На<strong>&nbsp;<a href="ekspluataciya_i_remont_mopeda_riga_13.html#finger" target="_blank">поршне</a>&nbsp;</strong>вынуть стопорные кольца. Вытолкнуть <strong><a href="https://ergofoto.ru/photos/album/predmety-1443?photoviewer=photo-93628?ref=990" target="_blank" title="поршневой палец">поршневой палец</a></strong> и снять поршень.</li>
+        <li><strong>Расколка двигателя.</strong> Открутить все винты, что соединяют две половинки картера (вместе с тремя винтами под снятой корзиной сцепления!). Держать двигатель на весу одной рукой, а другой осторожными ударами рукоятки молотка по второй половине двигателя отсоединить ее. Если возникнут трудности, то придется нагреть картер до 150-200 градусов С.</li>
+        <li>&nbsp;Чтобы добраться до сальника в отсеке зажигания, необходимо открутить винты пластины сальника. Снять пластину и если подшипник находится в картере, то выбить его через проставку.</li>
+        <li>&nbsp;Если ранее не удалось снять шестерню с коленчатого вала (п. 7), то взять проставку из мягкого материала диаметром немного меньше отверстия шестерни, уложить картер на 3&hellip;4 ровные опоры и выбить коленчатый вал.</li>
+    </ol>
+    <p>Двигатель &laquo;Дырчик&raquo; разобран.</p>
+    <h2>Сборка двигателя</h2>
+    <p>Сборку производить в обратной последовательности: подшипники в картер, колен. вал &ndash; в подшипники и т. д.</p>
+    <p>Хотите заработать в интернете? Жмите ссылку:</p>
+    <figure class="earnings col-sm-12">
+        <a rel="nofollow" target="_blank" href="https://dawork.ru/"><img alt="Заработок в интернете" src="/images/earnings-Internet.svg"></a>
+    </figure>
+        </article>
+
+<div class="download container">
+    <div class="row">
+        <div class="col-lg-10 col-md-10 col-sm-10 download-text">
+            <p>Комментарии и вопросы про разборку/сборку дырчика можно задать в письме с помощью обратной связи на сайте.</p>
+        </div>
+        <figure class="col-lg-2 col-md-2 col-sm-2 download-bottom">
+            <a rel="nofollow" href="https://feed.dawork.ru/feedback/" title="Переход на сайт feed.dawork.ru для написания сообщения">
+                <img src="/images/feedback.png" alt="Кнопка обратная связь"  class="morph">
+            </a>
+        </figure>
+    </div>
+</div>
+
+<div class="contacts ">
+    <div class="container">
+        <div class="row">
+            <section class="contacts-about col-md-3 col-sm-6 col-xs-12">
+                <h2>О САЙТЕ</h2>
+                <p class="contacts-about-p">
+                    МотоХод - сайт о мобильной маломощной технике, о небольших двигателях. Здесь затронуты некоторые пункты Правил дорожного движения касательно транспорных средств. Имеются ссылки Руководств по экслуатации. Рассказано о двигателе Д8М с мопеда Рига-13...
+                </p>
+            </section>
+            <nav class="contacts-menu col-md-4 col-sm-5 col-xs-6" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <h2>Статьи</h2>
+                <ul class="contacts-about-p">
+                    <li><a class="contacts-menu-link" href="index.html" itemprop="url"><span itemprop="name">Главная</span></a></li>
+                    <li><a class="contacts-menu-link" href="mototexnika.html" itemprop="url"><span itemprop="name">Мототехника</span></a></li>
+                    <li><a class="contacts-menu-link" href="/doc/quide_moped.html" itemprop="url"><span itemprop="name">Руководство по эксплуатации</span></a></li>
+                    <li><a class="contacts-menu-link" href="lodochnyj_motor_lm_1.html" itemprop="url"><span itemprop="name">Лодочный мотор ЛМ-1</span></a></li>
+                    <li><a class="contacts-menu-link" href="ehnergetika.html" itemprop="url"><span itemprop="name">Энергетика</span></a></li>
+                </ul>
+            </nav>
+            <nav class="contacts-browse col-md-2 col-sm-3 col-xs-6" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <h2>Посмотреть</h2>
+                <ul class="contacts-about-p">
+                    <li><a class="contacts-menu-link" href="/doc/moped.html" itemprop="url"><span itemprop="name">Мопед Рига-13</span>
+                    </a></li>
+                    <li><a class="contacts-menu-link" href="/doc/lm1.html" itemprop="url"><span itemprop="name">Лодочный мотор ЛМ-1</span>
+                    </a></li>
+                    <li><p class="contacts-menu-link" itemprop="name">Схема электрическая ближнего света</p></li>
+                    <li><a class="contacts-menu-link" href="/doc/5cm4.html" itemprop="url"><span itemprop="name">Электросчетчик 5CM4</span>
+                    </a></li>
+                </ul>
+            </nav>
+            <section class="contacts-connect col-md-3 col-sm-8 col-xs-12">
+                <h2>Связаться с нами</h2>
+                <div class="contacts-connect-list">
+                    <a rel="nofollow" href="https://feed.dawork.ru/feedback/" title="Переход на сайт feed.dawork.ru для написания сообщения"><img class="contacts-connect-img" src="images/linkedin.png" alt="Кнопка обратная связь по электронной почте"></a>
+                    <a rel="nofollow" href="https://join.skype.com/invite/LdbvHAr4F4DF" title="Переход на скайп для общения"><img class="contacts-connect-img" src="images/skype.png" alt="Кнопка для связи по скайпу"></a>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<footer itemscope itemtype="http://schema.org/WPFooter">
+    <meta itemprop="copyrightYear" content="2010">
+    <meta itemprop="author" content="Егоров Валерий">
+    <meta itemprop="copyrightHolder" content="Егоров Валерий">
+    <div class="container">
+        <div class="row">
+            <div class="copy col-lg-9 col-md-9 col-sm-8 col-xs-6">
+                <p>&copy; Copyright 2010 - МотоХод. Все права защищены. Некоторые используемые здесь бесплатные иконки созданы Brankic1979.com. Логотипы клиентов являются собственностью и товарными знаками соответствующих владельцев / компаний.</p>
+            </div>
+            <div class="header-logo col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <p class="header-logo-link">Мото<span class="header-logo-sub">Ход</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+</body>
+</html>

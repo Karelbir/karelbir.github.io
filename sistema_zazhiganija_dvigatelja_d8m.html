@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Действия при регулировке зажигания мопеда. Технические требования по установке ротор генератора, зазора между контактами прерывателя. Проверка системы зажигания двигателя Д8М. Магдино.">
+    <meta name="keywords" content="прерыватель, двигатель, генератор, зажигание, ротор, магдино, свеча">
+    <title>Система зажигания двигателя Д8М</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple.png">  <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="header-logo col-lg-2 col-md-3">
+                <a class="header-logo-link" href="index.html">Мото<span class="header-logo-sub">Ход</span></a>
+            </div>
+            <nav class="header-nav col-lg-10 col-md-9 clearfix" itemscope itemtype="http://schema.org/SiteNavigationElement"> <!--чтобы перенести меню вправо этот див-->
+                <ul class="header-nav-list">
+                    <li class="header-nav-item">
+                        <a class="header-nav-link" href="index.html" itemprop="url"><span itemprop="name">ГЛАВНАЯ</span>
+                        </a>
+                    </li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="blizhnij_svet.html" itemprop="url"><span itemprop="name">Ближний свет</span></a></li>
+                    <li class="header-nav-item"><p class="header-nav-link">МОТОТЕХНИКА<i class="fa fa-chevron-down"></i></p>
+                        <ul class="header-nav-sub">
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="mototexnika.html" itemprop="url"><span itemprop="name">Мототехника</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="ekspluataciya_i_remont_mopeda_riga_13.html" itemprop="url"><span itemprop="name">Эксплуатация и ремонт мопеда Рига-13</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="razborka-sborka_dvigatelya_serii_d.html" itemprop="url"><span itemprop="name">Разборка-сборка двигателя серии "Д"</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <p class="header-nav-sub-link" itemprop="name">Система зажигания двигателя Д8М</p>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="moped_i_pdd.html" itemprop="url"><span itemprop="name">Водитель мопеда и Правила дорожного движения 2015</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="lodochnyj_motor_lm_1.html" itemprop="url"><span itemprop="name">Лодочный мотор ЛМ-1</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-nav-item"><p class="header-nav-link">РУКОВОДСТВА<i class="fa fa-chevron-down"></i></p>
+                        <ul class="header-nav-sub">
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="/doc/engine.html" itemprop="url"><span itemprop="name">Руководство по эксплуатации Д8.01.800 РЭ</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="/doc/quide_moped.html" itemprop="url"><span itemprop="name">Руководство по эксплуатации РМЗ-1.4130001-1</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="/doc/lm1.html" itemprop="url"><span itemprop="name">Руководство по эксплуатации лодочного мотора ЛМ-1</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-nav-item"><p class="header-nav-link">ЭНЕРГЕТИКА<i class="fa fa-chevron-down"></i></p>
+                        <ul class="header-nav-sub">
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="ehnergetika.html" itemprop="url"><span itemprop="name">Энергетика</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="proverka_ehlektroschetchika.html" itemprop="url"><span itemprop="name">Проверка электросчетчика</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="ulichnoe_osveshhenie_pochemu_v_derevnyax_temno.html" itemprop="url"><span itemprop="name">Уличное освещение, почему в деревнях темно</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="zamenit_ehl_schetchik.html" itemprop="url"><span itemprop="name">Замена электросчетчика</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="contact.html" itemprop="url"><span itemprop="name">КОНТАКТЫ</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<aside>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12" itemscope itemtype="https://schema.org/WPAdBlock">
+                <a href="https://www.litres.ru/k-p-bykov/mopedy-minibayki-kitayskogo-proizvodstva-viper-alpha-alfamoto-pony-xgjao-xgj-50-3a-fada-musstang-yx-48q-2-irbis-alpha-i-dr-ustroystvo-ekspluataciya-tehnicheskoe-obsluzhivanie-7209502/?lfrom=233431131" target="_blank" title="Покупка книги в магазине" itemprop="url">
+                    <img class="advert" src="/images/advertisement/litres-moped.svg" alt="Книга Мопеды, минибайки китайского производства" itemprop="image">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12" itemscope itemtype="https://schema.org/WPAdBlock">
+                <a href="https://www.litres.ru/k-p-bykov/mopedy-mokiki-kitayskogo-proizvodstva-delta-leader-mustang-i-dr-ustroystvo-ekspluataciya-tehnicheskoe-obsluzhivanie-6600811/?lfrom=233431131" target="_blank" title="Покупка книги в магазине" itemprop="url">
+                    <img class="advert" src="/images/advertisement/litres-mokik.svg" alt="Книга Мопеды, мокики китайского производства: Delta, Leader, Mustang и др" itemprop="image" />
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12" itemscope itemtype="https://schema.org/WPAdBlock">
+                <a href="https://www.litres.ru/k-p-bykov/skutery-kitayskogo-koreyskogo-i-tayvanskogo-proizvodstva-klassa-50-kub-sm-s-perednimi-diskovymi-tormozami-ustroystvo-ekspluataciya-tehnicheskoe-obsluzhivanie-7228051/?lfrom=233431131" target="_blank" title="Покупка книги в магазине" itemprop="url">
+                    <img class="advert" src="/images/advertisement/litres.svg"  alt="Книга Скутеры китайского, корейского и тайваньского производства класса 50 куб" itemprop="image">
+                </a>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<div class="container works">
+    <h1>&nbsp;Система зажигания двигателя Д8М</h1>
+    <figure class="col-sm-12" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="/images/art/magdino-candle.svg" title="увеличенное изображение в этом же окне" itemprop="contentUrl">
+            <img src="/images/art/magdino-candle.svg" alt="Схема электрическая зажигания двигателя серии &quot;Д&quot; для мопеда" itemprop="thumbnailUrl">
+        </a>
+        <figcaption itemprop="caption">Схема электрическая зажигания двигателя серии &quot;Д&quot; для мопеда</figcaption>
+    </figure>
+    <p> Это рисунок одной из страниц <a href="mototexnika.html" target="_blank">Руководства по эксплуатации</a> мопеда РМЗ-1.413</p>
+    <figure class="col-sm-12" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="/images/art/zazhig.svg" title="увеличенное изображение в этом же окне" itemprop="contentUrl">
+            <img src="/images/art/zazhig.svg" alt="Описание работы системы зажигания двигателя Д" itemprop="thumbnailUrl">
+        </a>
+        <figcaption itemprop="caption">Описание работы системы зажигания двигателя серии &quot;Д&quot; для мопеда</figcaption>
+    </figure>
+       <p>Устройство двигателя Д8М, эксплуатация и ремонт мопеда&nbsp;описано на странице <strong><a href="ekspluataciya_i_remont_mopeda_riga_13.html" target="_blank">ЭКСПЛУАТАЦИЯ И РЕМОНТ МОПЕДА РИГА-13</a></strong>.</p>
+    <h2>Регулировка зажигания двигателя</h2>
+    <h3>Проверка зазора между контактами прерывателя.</h3>
+    <ol>
+        <li>Снять крышку магдино и вывернуть свечу зажигания.</li>
+        <li>Очистить контакты прерывателя от нагара и масла.</li>
+        <li>Протереть полость магдино чистой тряпкой, смоченной в бензине.</li>
+        <li>Вставить отвертку в шлиц винта 21, крепящего кулачок, и провернуть кулачок 22 с ротором генератора 23 по часовой стрелке до момента полного разрыва контактов 9 и 10.</li>
+        <li>Замерить и при необходимости отрегулировать зазор между контактами прерывателя в пределах 0,3...0,5 мм.&nbsp;</li>
+    </ol>
+    <h3>Проверка опережения зажигания</h3>
+    <ol>
+        <li>Повернуть кулачок 22 с ротором 23 по часовой стрелке до полного смыкания контактов 9 и 10, предварительно вставив между контактами полоску папиросной бумаги.</li>
+        <li>Осторожно натягивая удерживаемую контактами бумагу, медленно поворачивать кулачок 22 с ротором 23 по часовой стрелке до момента выхода бумаги из защемления (момент размыкания контактов).</li>
+    </ol>
+    <p>​При правильно установленном опережении зажигания в момент размыкания контактов риски 28 на роторе 23 &nbsp;и статоре генератора 25 должны совпадать.</p>
+    <p><em>ПРИМЕЧАНИЕ: Риски установочные 28 нанесены при сборке двигателя и соответствуют моменту зажигания, при котором поршень на 3,2...3,5 &nbsp;мм не доходит до верхней мертвой точки.</em></p>
+
+    <h3>Регулировка зазора между контактами прерывателя и опережения зажигания.</h3>
+    <p>У данного прерывателя зазор между контактами регулируется совместно с опережением зажигания. Для регулировки воспламенения горючей смеси необходимо:</p>
+    <ol>
+        <li>Ослабить два винта 26 крепления прерывателя.</li>
+        <li>Установить ротор генератора 23 в положение, когда риска, нанесенная на нем, совпадает с риской, нанесенной на статоре генератора 25, что соответсвует положению поршня 3,2...3,5 мм до верхней мертвой точки.</li>
+        <li>Установить прерыватель в положение начала размыкания контактов и подтянуть винты 26 крепления прерывателя.</li>
+        <li>Повернуть ротор генератора 23 по часовой стрелке до полного размыкания контакторв и проверить величину зазора.&nbsp;</li>
+    </ol>
+    <p>​Если зазор между контактами меньше 0,3 мм, нужно:</p>
+    <ul>
+        <li>установить ротор, как указано в пункте 2 (см. выше);</li>
+        <li>ослабить два винта 26 крепления прерывателя и сместить прерыватель вправо и вверх;</li>
+    </ul>
+    <p>Если зазор между контактами меньше 0,5&nbsp;мм, нужно:</p>
+    <ul>
+        <li>установить ротор генератора 23, как указано выше в пункте2;</li>
+        <li>ослабить два винта 26 крепления прерывателя и сместить прерыватель влево и вниз.</li>
+    </ul>
+    <p>&nbsp; &nbsp;5. &nbsp;Проверить величину установленного зазора и опережения зажигания и окончательно затянуть винты 26 крепления прерывателя.</p>
+    <p><em>УКАЗАНИЕ. После регулирования пуска двигателя надежно затяните <a href="http://m0isey.livejournal.com/10319.html" target="_blank">винт 21</a>, крепящий кулачок с ротором на коленчатом валу.</em></p>
+    <h2>Проверка работы системы зажигания двигателя Д8М</h2>
+    <h3>Проверка работы свечи</h3>
+    <ol>
+        <li>Снять со свечи провод высокого напряжения.</li>
+        <li>Вывернуть свечу и снять прокладку.</li>
+        <li>Очистить электроды от нагара и при необходимости установить зазор 0,5...0,6 мм между электродами.</li>
+        <li>Надеть угольник с проводом на свечу.</li>
+        <li>Положить свечу на цилиндр или картер.</li>
+        <li>Включить муфту сцепления и при поднятом заднем колесе, проворачивая двигатель педалью или задним колесом, проверить проскакивание искры между электродами свечи.</li>
+    </ol>
+    <p>При отсутствии искры повторить проверку с исправной свечой. Отсутствие искры на электродах исправной свечи укажет на неисправность магдино или провода</p>
+    <h3>Проверка работы магдино</h3>
+    <ol>
+        <li>Снять крышку магдино.</li>
+        <li>Отсоединить от выводного винта 14 электропровод 38.</li>
+        <li>Внешний провод цепи электрооборудования мопеда отсоединить от выводного винта 35 и подсоединить к выводному винту 14 вместо провода 38.</li>
+        <li>Резко провернуть двигатель педалью мопеда или за заднее колесо при включенном сцеплении и поднятом заднем колесе мопеда. Полное отсутствие при этом накала на лампах осветительных приборов мопеда указывает на неисправность провода высокого напряжения&nbsp;19 и угольника свечи 30.</li>
+    </ol>
+    <h3>Проверка провода зажигания с угольником свечи</h3>
+    <ol>
+        <li>Вывернуть провод зажигания 19 из угольника свечи 30.</li>
+        <li>Поднести свободный конец провода зажигания 19 к массе (картеру или цилиндру двигателя), обеспечив воздушный промежуток 3...5 мм.</li>
+        <li>Резко повернуть двигатель педалью мопеды при включенном сцеплении и поднятом заднем колесе мопеда. Отсутствие искры при этом через воздушный промежуток указывает на неисправность провода зажигания 19 или высоковольтного трансформатора ТЛМ-3.</li>
+        <li>Провод высокого напряжения&nbsp;19 проверить подключением в цепь батарейки карманного фонаря с лампочкой. Если провод высокого напряжения&nbsp;не имеет обрыва, то лампочка должна гореть.</li>
+        <li>Если при исправном магдино, проводе зажигания и заведомо исправной свече зажигания на ее электродах отсутствует искра при резком прокручивании двигателя, то неисправен угольник свечи 30.</li>
+    </ol>
+    <h2>Разборка и сборка магдино</h2>
+    <ol>
+        <li>Снять крышку магдино с прокладкой.</li>
+        <li>Отвернуть выводные винты 14 и 35, отсоединить вывод конденсатора 13, вывод 37 катушки генератора 24 и провод перемычки 17.</li>
+        <li>Отвернуть гайку 2 и вынув винт 8 крепления пружины прерывателя 5 к планке 7, отсоединить вывод 18 катушки генератора 24 и провод перемычки 17 от прерывателя 20.</li>
+        <li>Вывернув винт, отсоединить второй вывод конденсатора 12.</li>
+        <li>Вывернуть два винта 26 крепления прерывателя 20 и снять его вместе с конденсатором 12 и хомутом 11.</li>
+        <li>Вывернуть винт 21 и снять пружинную шайбу.</li>
+        <li>Вывернуть оставшиеся три винта 27 крепления статора генератора 25 и вынуть его из картера двигателя.</li>
+        <li>Снять кулачок 22, обратив внимание на сохранность штифта в кулачке.</li>
+        <li>Двумя отвертками поддеть ротор генератора 23 и снять его с цапфы коленчатого вала. Шпонку и пружинную зубчатую шайбу не снимать.</li>
+    </ol>
+    <p><em>​ПРИМЕЧАНИЯ: 1. При разборке магдино необходимо обратить внимание на положение деталей магдино и обеспечение их сохранности. 2. Для сохранения магнитных свойств ротора генератора 23 хранить его вставленным в статор генератора 25. 3. Без надобности ротор генератора 23 и кулачок 22 с цапфы коленчатого вала не снимать.</em></p>
+    <p>&nbsp; &nbsp;10.&nbsp;Сборка магдино осуществляется в обратном порядке.</p>
+    <p><em>УКАЗАНИЕ. При установке магдино выводные провода 18 и 37 катушки генератора 24 и прорезь в роторе генератора 23 под штифт кулачка 22 располагать наружу.</em></p>
+    <p><em>&nbsp;&nbsp; </em>11.&nbsp;В случае замены статора или ротора генератора для обеспечения регулировки зажигания необходимо нанести установочную риску, для чего:</p>
+    <ul>
+        <li>поставить поршень в положение, соответствующее верхней мертвой точке (ВМТ), и замерить штангенциркулем расстояние от наружного торца цилиндра до днища поршня;&nbsp;</li>
+        <li>повернуть коленчатый вал и установить поршень в положение 3,2...3,5 мм не доходя до ВМТ. Это положение соответствует началу размыкания контактов прерывателя;</li>
+        <li>нанести установочную риску на роторе и статоре генератора.</li>
+    </ul>
+</div>
+
+<div class="download container">
+    <div class="row">
+        <div class="col-lg-10 col-md-10 col-sm-10 download-text">
+            <p>Комментарии и вопросы про разборку/сборку дырчика можно задать в письме с помощью обратной связи на сайте.</p>
+        </div>
+        <figure class="col-lg-2 col-md-2 col-sm-2 download-bottom">
+            <a rel="nofollow" href="https://feed.dawork.ru/feedback/" title="Переход на сайт feed.dawork.ru для написания сообщения">
+                <img src="/images/feedback.png" alt="Кнопка обратная связь"  class="morph">
+            </a>
+        </figure>
+    </div>
+</div>
+
+<div class="contacts ">
+    <div class="container">
+        <div class="row">
+            <section class="contacts-about col-md-3 col-sm-6 col-xs-12">
+                <h2>О САЙТЕ</h2>
+                <p class="contacts-about-p">
+                    МотоХод - сайт о мобильной маломощной технике, о небольших двигателях. Здесь затронуты некоторые пункты Правил дорожного движения касательно транспорных средств. Имеются ссылки Руководств по экслуатации. Рассказано о двигателе Д8М с мопеда Рига-13...
+                </p>
+            </section>
+            <nav class="contacts-menu col-md-4 col-sm-5 col-xs-6" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <h2>Статьи</h2>
+                <ul class="contacts-about-p">
+                    <li><a class="contacts-menu-link" href="index.html" itemprop="url"><span itemprop="name">Главная</span></a></li>
+                    <li><a class="contacts-menu-link" href="mototexnika.html" itemprop="url"><span itemprop="name">Мототехника</span></a></li>
+                    <li><a class="contacts-menu-link" href="/doc/quide_moped.html" itemprop="url"><span itemprop="name">Руководство по эксплуатации</span></a></li>
+                    <li><a class="contacts-menu-link" href="lodochnyj_motor_lm_1.html" itemprop="url"><span itemprop="name">Лодочный мотор ЛМ-1</span></a></li>
+                    <li><a class="contacts-menu-link" href="ehnergetika.html" itemprop="url"><span itemprop="name">Энергетика</span></a></li>
+                </ul>
+            </nav>
+            <nav class="contacts-browse col-md-2 col-sm-3 col-xs-6" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <h2>Посмотреть</h2>
+                <ul class="contacts-about-p">
+                    <li><a class="contacts-menu-link" href="/doc/moped.html" itemprop="url"><span itemprop="name">Мопед Рига-13</span>
+                    </a></li>
+                    <li><a class="contacts-menu-link" href="/doc/lm1.html" itemprop="url"><span itemprop="name">Лодочный мотор ЛМ-1</span>
+                    </a></li>
+                    <li><p class="contacts-menu-link" itemprop="name">Схема электрическая ближнего света</p></li>
+                    <li><a class="contacts-menu-link" href="/doc/5cm4.html" itemprop="url"><span itemprop="name">Электросчетчик 5CM4</span>
+                    </a></li>
+                </ul>
+            </nav>
+            <section class="contacts-connect col-md-3 col-sm-8 col-xs-12">
+                <h2>Связаться с нами</h2>
+                <div class="contacts-connect-list">
+                    <a rel="nofollow" href="https://feed.dawork.ru/feedback/" title="Переход на сайт feed.dawork.ru для написания сообщения"><img class="contacts-connect-img" src="images/linkedin.png" alt="Кнопка обратная связь по электронной почте"></a>
+                    <a rel="nofollow" href="https://join.skype.com/invite/LdbvHAr4F4DF" title="Переход на скайп для общения"><img class="contacts-connect-img" src="images/skype.png" alt="Кнопка для связи по скайпу"></a>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<footer itemscope itemtype="http://schema.org/WPFooter">
+    <meta itemprop="copyrightYear" content="2010">
+    <meta itemprop="author" content="Егоров Валерий">
+    <meta itemprop="copyrightHolder" content="Егоров Валерий">
+    <div class="container">
+        <div class="row">
+            <div class="copy col-lg-9 col-md-9 col-sm-8 col-xs-6">
+                <p>&copy; Copyright 2010 - МотоХод. Все права защищены. Некоторые используемые здесь бесплатные иконки созданы Brankic1979.com. Логотипы клиентов являются собственностью и товарными знаками соответствующих владельцев / компаний.</p>
+            </div>
+            <div class="header-logo col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <p class="header-logo-link">Мото<span class="header-logo-sub">Ход</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+</body>
+</html>
