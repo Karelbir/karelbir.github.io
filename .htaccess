@@ -1,3 +1,7 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ https://karelbir.github.io/ [R=301,L]
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
 ExpiresActive On
@@ -13,8 +17,4 @@ ExpiresDefault "access 1 month"
 </IfModule>
 ## EXPIRES CACHING ##
 AddDefaultCharset UTF-8
-RewriteEngine on
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
-RewriteRule ^index\.html$ https://karelbir.github.io/ [R=301,L]
-
 
