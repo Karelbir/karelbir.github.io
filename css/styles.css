@@ -24,6 +24,9 @@ ul {
 figure {
   text-align: center;
 }
+table, .pinout {
+  background-color: #81e4ed;
+}
 .morph {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -212,7 +215,7 @@ aside img {
 
 /*------End-slider-----------*/
 /*---mid-----------*/
-.mid, .contacts {
+.mid, .contacts, .comp {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
   background-color: #e7ebf1;
 }
@@ -339,6 +342,9 @@ article>ul, article>ul>li>ul, article>ul>li>ul>li>ul {
   line-height: 5px;
   display: inline-block;
   width: 0.4em;
+}
+.my-element{
+  overflow-wrap: break-word;
 }
 /*------End-article--------*/
 /*----------download----*/

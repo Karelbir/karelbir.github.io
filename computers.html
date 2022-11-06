@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Подробное изложение переделки блока питания для Compaq Deskpro 466.">
+    <meta name="keywords" content="Compaq Deskpro 466, блок питания, провод, питание, compaq, штекер, компьютер">
+    <title>Компьютеры</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple.png">  <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="header-logo col-lg-2 col-md-3">
+                <a class="header-logo-link" href="/index.html">Мото<span class="header-logo-sub">Ход</span></a>
+            </div>
+            <nav class="header-nav col-lg-10 col-md-9 clearfix" itemscope itemtype="http://schema.org/SiteNavigationElement"> <!--чтобы перенести меню вправо этот див-->
+                <ul class="header-nav-list">
+                    <li class="header-nav-item">
+                        <a class="header-nav-link" href="/index.html" itemprop="url"><span itemprop="name">ГЛАВНАЯ</span>
+                        </a>
+                    </li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="/blizhnij_svet.html" itemprop="url"><span itemprop="name">Ближний свет</span></a></li>
+                    <li class="header-nav-item"><p class="header-nav-link">МОТОТЕХНИКА<i class="fa fa-chevron-down"></i></p>
+                        <ul class="header-nav-sub">
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="/mototexnika.html" itemprop="url"><span itemprop="name">Мототехника</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="/ekspluataciya_i_remont_mopeda_riga_13.html" itemprop="url"><span itemprop="name">Эксплуатация и ремонт мопеда Рига-13</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="/razborka-sborka_dvigatelya_serii_d.html" itemprop="url"><span itemprop="name">Разборка-сборка двигателя серии "Д"</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="/sistema_zazhiganija_dvigatelja_d8m.html" itemprop="url"><span itemprop="name">Система зажигания двигателя Д8М</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="/moped_i_pdd.html" itemprop="url"><span itemprop="name">Водитель мопеда и Правила дорожного движения 2015</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="/lodochnyj_motor_lm_1.html" itemprop="url"><span itemprop="name">Лодочный мотор ЛМ-1</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-nav-item"><p class="header-nav-link">РУКОВОДСТВА<i class="fa fa-chevron-down"></i></p>
+                        <ul class="header-nav-sub">
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="/doc/engine.html" itemprop="url"><span itemprop="name">Руководство по эксплуатации Д8.01.800 РЭ</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="/doc/quide_moped.html" itemprop="url"><span itemprop="name">Руководство по эксплуатации РМЗ-1.4130001-1</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="/doc/lm1.html" itemprop="url"><span itemprop="name">Руководство по эксплуатации лодочного мотора ЛМ-1</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-nav-item"><p class="header-nav-link">ЭНЕРГЕТИКА<i class="fa fa-chevron-down"></i></p>
+                        <ul class="header-nav-sub">
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="/ehnergetika.html" itemprop="url"><span itemprop="name">Энергетика</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="/proverka_ehlektroschetchika.html" itemprop="url"><span itemprop="name">Проверка электросчетчика</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="/ulichnoe_osveshhenie_pochemu_v_derevnyax_temno.html" itemprop="url"><span itemprop="name">Уличное освещение, почему в деревнях темно</span></a>
+                            </li>
+                            <li class="header-nav-sub-item">
+                                <a class="header-nav-sub-link" href="/zamenit_ehl_schetchik.html" itemprop="url"><span itemprop="name">Замена электросчетчика</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-nav-current">Компьютеры</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="slider container-fluid">
+    <figure itemscope itemtype="http://schema.org/ImageObject">
+        <a href="images/art/compaq466.svg" title="Увеличенное изображение в этом же окне компьютера Compaq DeskPro 466" itemprop="contentUrl">
+            <img src="images/art/compaq466.svg" alt="компьютер compaq466" itemprop="contentUrl">
+        </a>
+        <meta itemprop="description" content="Фото ретрокомпьютера compaq466">
+    </figure>
+    <figure itemscope itemtype="http://schema.org/ImageObject">
+        <a href="images/art/i486dx2.svg" title="Увеличенное изображение в этом же окне процессора i486dx2 внешняя сторона" itemprop="contentUrl">
+            <img src="images/art/i486dx2_smal.svg" alt="Процессор i486dx2" itemprop="contentUrl">
+        </a>
+        <meta itemprop="description" content="Фото процессора i486dx2 вид сверху">
+    </figure>
+    <figure itemscope itemtype="http://schema.org/ImageObject">
+        <a href="images/art/i486dx2_contacts.svg" title="Увеличенное изображение в этом же окне процессора i486dx2 внутреняя сторона со штыркями" itemprop="contentUrl">
+            <img src="images/art/i486dx2_contacts_smal.svg" alt="Контакты процессора i486dx2" itemprop="contentUrl">
+        </a>
+        <meta itemprop="description" content="Фото процессора i486dx2 со стороны контактов">
+    </figure>
+    <figure itemscope itemtype="http://schema.org/ImageObject">
+        <a href="images/art/memory_slots.svg" title="Увеличенное изображение в этом же окне слотов для планок памяти SIMM" itemprop="contentUrl">
+            <img src="images/art/memory_slots_smal.svg" alt="Слоты для двух планок SIMM памяти" itemprop="contentUrl">
+        </a>
+        <meta itemprop="description" content="Фото 2 слота для SIMM памяти 72 контактной">
+    </figure>
+    <figure itemscope itemtype="http://schema.org/ImageObject">
+        <a href="images/art/bios.png" title="Увеличенное изображение в этом же окне конфигурации оборудования компьютера Compaq DeskPro 466 в биосе" itemprop="contentUrl">
+            <img src="images/art/bios_smal.svg" alt="Биос Compaq466 на экране" itemprop="contentUrl">
+        </a>
+        <meta itemprop="description" content="Фото экрана монитора с элементами биоса для Compaq466">
+    </figure>
+</div>
+
+<aside class="comp">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12" itemscope itemtype="https://schema.org/WPAdBlock">
+                <a href="http://www.web-ip.ru/index.php?reflog=moisey" itemprop="url">
+                    <img class="advert" src="/images/advertisement/p300.gif" width="200" height="300" alt="Web-IP.ru - Система Активной Рекламы" itemprop="image">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12" itemscope itemtype="https://schema.org/WPAdBlock">
+                <a href="https://ktcybr2448.programsite.ru/book" target="_blank" itemprop="url">
+                    <img class="advert" src="/images/advertisement/rus300.png" alt="Создание сайта от начала и до конца" itemprop="image" />
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12" itemscope itemtype="https://schema.org/WPAdBlock">
+                <a href="https://www.etxt.ru/?r=vgoru" target="_blank" title="Биржа eTXT" itemprop="url">
+                    <img class="advert" src="/images/advertisement/etxt300.jpg" title="Биржа контента eTXT" alt="Биржа контента eTXT - для заработка" itemprop="image">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12" itemscope itemtype="https://schema.org/WPAdBlock">
+                <a href="https://xn--e1ai0c.xn--p1ai/article.php?id=20" target="_blank" title="Программный код помощника Яндекса - Алисы" itemprop="url">
+                    <img class="advert" src="/images/advertisement/alice.svg" title="Статья о приложении Алиса" alt="Как развернуnm приложение Алиса с помощью Яндекс.Диалогов и Heroku" itemprop="image">
+                </a>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<article class="container works">
+    <h1>Compaq Deskpro 466</h1>
+    <p>Это действительно мощная машина для 1994 года с процессором Intel 486DX2 на частоте 66 МГц, который имеет только пассивное охлаждение. Заслуживает внимания основная оперативная память 72pin SIMM EDO, которая поддерживает объем до 72 МБ. Для хранения данных используется жесткий диск. Компьютер также имеет встроенную графическую карту Cirrus Logic CL-GD5434 с 1 МБ памяти, а также сетевую карту. Это экономит возможный слот, если потребуется заполнить его данными по сети. Согласно информации на наклейке, на которой указана конфигурация материнской платы, которая есть у всех компьютеров Compaq, машина может быть модернизирована до 486DX4 100MHz. Есть даже один слот PCI, куда можно вставить, например, 3DFX Voodoo1 и два слота ISA для какой-нибудь звуковой карты.
+    </p>
+    <figure itemscope itemtype="http://schema.org/ImageObject">
+        <a href="/images/art/socket.svg" title="Увеличенное изображение сокета Socket 3" itemprop="contentUrl">
+            <img class="col-sm-6" src="/images/art/socket.svg" alt="Socket 3" itemprop="thumbnailUrl">
+        </a>
+        <a href="/images/art/processor.svg" title="Увеличенное изображение процессора для Compaq Deskpro 466" itemprop="contentUrl">
+            <img class="col-sm-6" src="/images/art/processor.svg" alt="Процессор i486dx2 с радиатором" itemprop="thumbnailUrl">
+        </a>
+        <figcaption class="col-sm-12" itemprop="caption">Сокет "Socket 3" и процессор i486dx2 с радиатором охлаждения</figcaption>
+    </figure>
+    <p>
+    Фрагмент перевода на задней шильде системного блока Compaq Deskpro 466: «Это устройство соответствует части 15 правил fcc. Эксплуатация осуществляется при соблюдении следующих двух условий: 1) данное устройство не должно создавать вредных помех…»
+    </p>
+
+    <figure itemscope itemtype="http://schema.org/ImageObject">
+        <a href="/images/art/nameplate.svg" title="Увеличенное изображение шильды на корпусе системного блока Compaq Deskpro 466" itemprop="contentUrl">
+            <img class="col-sm-4" src="/images/art/nameplate.svg" alt="Шильда на корпусе системного блока Compaq Deskpro 466" itemprop="thumbnailUrl">
+        </a>
+        <a href="/images/art/motherboard-circuit.svg" title="Увеличенное изображение схемы расположения компонентов на материнской плате Compaq" itemprop="contentUrl">
+            <img class="col-sm-4" src="/images/art/motherboard-circuit.svg" alt="Схема расположения компонентов на материнской плате Compaq" itemprop="thumbnailUrl">
+        </a>
+        <a href="/images/art/motherboard.svg" title="Увеличенное изображение фрагмента материнской платы Compaq" itemprop="contentUrl">
+            <img class="col-sm-4" src="/images/art/motherboard.svg" alt="Фрагмент материнской платы Compaq" itemprop="thumbnailUrl">
+        </a>
+        <figcaption class="col-sm-12" itemprop="caption">Материнская плата Compaq в компьютере Compaq466</figcaption>
+    </figure>
+    <h2>Блок питания Compaq 214978-001 PS-5151-4C серии PS2021 компьютера Compaq Deskpro 466</h2>
+    <p>После длительного хранения Compaq Deskpro 466 в гараже (ориентировочно 6 лет) компьютер перестал запускаться. Обнаружилось отсутствие напряжений на выходе из блока электропитания Compaq 214978-001 PS-5151-4C серии PS2021.
+    </p>
+    <figure class="col-sm-12" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="/images/art/power_supply.png" title="Увеличенное изображение блока питания в системнике Compaq Deskpro 466" itemprop="contentUrl">
+            <img src="/images/art/power_supply.svg" alt="Блок питания в Compaq Deskpro 466" itemprop="thumbnailUrl">
+        </a>
+        <figcaption itemprop="caption">Блок питания в Compaq Deskpro 466</figcaption>
+    </figure>
+    <p>
+    После неудачных манипуляций сгорел предохранитель. Блок имеет на задней стенке переключатель 230-115 В. Случайно включил его в розетку с напряжением 230 В при положении переключателя на 115 В. Нужный предохранитель вместо сгоревшего не нашелся, сделал жучок. Сгорел и жучок, и конденсатор, а может еще что-то не наблюдаемое визуально.
+    </p>
+    <figure class="col-sm-12" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="/images/art/power_supply_faulty.png" title="Увеличенное изображение сгоревшего блока питания от Compaq Deskpro 466" itemprop="contentUrl">
+            <img src="/images/art/power_supply_faulty.svg" alt="Блок питания Compaq Deskpro 466 и сгоревшие элементы электроники" itemprop="thumbnailUrl">
+        </a>
+        <figcaption itemprop="caption">Сгоревшие элементы электроники в блоке питания от Compaq Deskpro 466</figcaption>
+    </figure>
+    <p>
+        Решил заменить блок питания в компьютере Compaq Deskpro 466. Нашелся с помойки китайский с более современным форм-фактором ATX вместо требуемого AT. Он оказался исправный. У него разъём для материнской платы ATX с 20 pin. А для материнской платы этого компьютера требуются 2 штекера: один разъем P1 на 9 pin, второй - P2 на 8 pin.
+    </p>
+    <p>
+    Опишу порядок моей неудачной попытки замены разъёма с 20 штырьками на штекерами с 9 и 8 штырьками. Может этот опыт будет кому-то полезен.
+    </p>
+    <p>
+        Пришлось отрезать оба разъёма для материнской платы со старого родного блока питания и делать распайку проводов штекера ATX с 20 pin.
+    </p>
+    <h3>Провода 20-штырькового штекера блока питания ATX</h3>
+    <figure class="col-sm-12" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="/images/art/pinout.svg" title="Увеличенное изображение распиновки проводов ATX 20 pin" itemprop="contentUrl">
+            <img src="/images/art/pinout.svg" alt="Блок питания ATX и распиновка проводов 20 pin" itemprop="thumbnailUrl">
+        </a>
+        <figcaption itemprop="caption">Провода ATX 20 pin</figcaption>
+    </figure>
+    <div class="table-responsive">
+    <table class="table table-bordered">
+        <tr>
+            <th>Вывод</th>
+            <th>Название</th>
+            <th>Описание</th>
+            <th>Цвет</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>+3,3v</td>
+            <td>+3,3v</td>
+            <td>Оранжевый</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>+3,3v</td>
+            <td>+3,3v</td>
+            <td>Оранжевый</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>GND</td>
+            <td>(Корпус, Общий провод)</td>
+            <td>Чёрный</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>+5v</td>
+            <td>+5v</td>
+            <td>Красный</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>GND</td>
+            <td>(Корпус, Общий провод)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>+5v</td>
+            <td>+5v</td>
+            <td>Красный</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>GND</td>
+            <td>(Корпус, Общий провод)</td>
+            <td>Чёрный</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>PowerGood</td>
+            <td>Сигнал готовности источника питания</td>
+            <td>Серый</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>+5v Standby</td>
+            <td>+5v, Подпитка в режиме Standby</td>
+            <td>Лиловый (Пурпурный)</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>+12v</td>
+            <td>+12v</td>
+            <td>Жёлтый</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>+3,3v</td>
+            <td>+3,3v</td>
+            <td>Оранжевый</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>-12v</td>
+            <td>-12v</td>
+            <td>Синий</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>GND</td>
+            <td>(Корпус, Общий провод)</td>
+            <td>Чёрный</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Power ON</td>
+            <td>Запуск блока питания</td>
+            <td>Зелёный</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>GND</td>
+            <td>(Корпус, Общий провод)</td>
+            <td>Чёрный</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>GND</td>
+            <td>(Корпус, Общий провод)</td>
+            <td>Чёрный</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>GND</td>
+            <td>(Корпус, Общий провод)</td>
+            <td>Чёрный</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>-5v</td>
+            <td>-5v</td>
+            <td>Белый</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>+5v</td>
+            <td>+5v</td>
+            <td>Красный</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>+5v</td>
+            <td>+5v</td>
+            <td>Красный</td>
+        </tr>
+    </table>
+    </div>
+    <h3>Распиновка блока питания Compaq 214978-001 PS-5151-4C</h3>
+    <p>
+    Удалось найти в интернете на странице my-element  <span class="my-element">http://matthieu.benoit.free.fr/Compaq_Prolinea575.htm</span> цвета и напряжения проводов родных штекеров P1 и P2 от блока питания Series PS2021 Model PS-5151-4C:
+    </p>
+    <p><strong>
+    Разъем P1:
+    </strong></p>
+    <ul class="pinout">
+        <li>оранжевый +12 В постоянного тока</li>
+        <li>синий -12 В постоянного тока</li>
+        <li>коричневый/белый: -5 В постоянного тока</li>
+        <li>черный заземление</li>
+        <li>черный заземление</li>
+        <li>черный заземление</li>
+        <li>красный +5В постоянного тока</li>
+        <li>красный +5В постоянного тока</li>
+        <li>красный +5В постоянного тока</li>
+    </ul>
+    <p><strong>
+    разъем Р2
+    </strong></p>
+    <ul class="pinout">
+        <li>желтый GND???</li>
+        <li>черный заземление</li>
+        <li>черный заземление</li>
+        <li>серый +3,4 В постоянного тока</li>
+        <li>коричневый +3,4 В постоянного тока</li>
+        <li>коричневый +3,4 В постоянного тока</li>
+        <li> белый +3,4 В постоянного тока</li>
+        <li>фиолетовый GND???</li>
+    </ul>
+    <p>
+        Блок питания серии PS2021 Compaq 214978-001 можно заменить блоком питания Compaq 214969-001 PS-5151-4C.
+    </p>
+    <h3>Перепайка проводов штекеров блоков питания</h3>
+    <p>
+    Распайку выполнил согласно этих распиновок. Провод <i>серый</i> штекера <strong>ATX 20 pin</strong> <i>«Сигнал готовности источника питания PowerGood»</i> +5v соединил на штекере <strong>P2 8 pin</strong> с <i>серым проводом +3,4В</i>.
+    </p>
+    <p>
+    На штекере <strong>P2 8 pin</strong> остались пустые: <i>желтый GND</i> и <i>фиолетовый GND</i>. Неизвестно чем их заменить.
+    </p>
+    <p>
+    Блок электропитания соединил в компьютере Compaq Deskpro 466 с материнской платой (c) 1994 Compaq и потребителями: жесткий диск Quantum 3.5 SERIES 630 Мб, дисковод DVD, флоппи-дисковод.
+    </p>
+    <figure itemscope itemtype="http://schema.org/ImageObject">
+        <a href="/images/art/quantum.png" title="Увеличенное изображение жесткого диска quantum от Compaq Deskpro 466" itemprop="contentUrl">
+            <img class="col-sm-6" src="/images/art/quantum.svg" alt="Жесткий диск quantum" itemprop="thumbnailUrl">
+        </a>
+        <a href="/images/art/quantum1.svg" title="Увеличенное изображение жесткого диска quantum с внутренней стороны от Compaq Deskpro 466" itemprop="contentUrl">
+            <img class="col-sm-6" src="/images/art/quantum1.svg" alt="Жесткий диск quantum внутренняя сторона" itemprop="thumbnailUrl">
+        </a>
+        <figcaption class="col-sm-12" itemprop="caption">Жесткий диск Quantum 3.5 series "630AT TR63A491 REV 01-B AO43M" 630 Мб от системника Compaq466</figcaption>
+    </figure>
+    <p>
+    После нажатия кнопки включения компьютера он не запустился. Но вентилятор блока питания работал, дисковод правильно реагировал на нажатия кнопки, в момент включения на клавиатуре загорелись индикаторы. А на мониторе не было никаких сигналов, словно он выключен от электросети.
+    </p>
+    <p>
+    Теперь думаю, что мне следовало бы сначала последовательно отключить, удалить дополнительное оборудование, которое я установил в качестве апгрейда. Был установлен записывающий DVD-дисковод, заведомо исправный, т.к. предварительно удалось его проверить.
+    </p>
+    <figure class="col-sm-12" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="/images/art/memory.svg" title="Увеличенное изображение модуля памяти SIMM HYM532814 BМ-60" itemprop="contentUrl">
+            <img src="/images/art/memory.svg" alt="Модуль памяти SIMM 32Mb 72-pin HYM532814 BМ-60" itemprop="thumbnailUrl">
+        </a>
+        <figcaption itemprop="caption">Модуль памяти SIMM 32Mb 72-pin HYM532814 BМ-60</figcaption>
+    </figure>
+    <p>
+    Были дополнительно установлены непроверенные и неизвестного качества 2 модуля памяти по 32 Мб. Была установлена непроверенная звуковая карта Creative Sound Blaster 16 (CT2230).
+    </p>
+    <figure class="col-sm-12" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="/images/art/ct2230.svg" title="Увеличенное изображение звуковой карты Creative Sound Blaster 16 (CT2230)" itemprop="contentUrl">
+            <img src="/images/art/ct2230.svg" alt="Звуковая карта Creative Sound Blaster 16 (CT2230)" itemprop="thumbnailUrl">
+        </a>
+        <figcaption itemprop="caption">Звуковая карта Creative Sound Blaster 16 (CT2230)</figcaption>
+    </figure>
+    <p>
+    Я пошел другим путем, как теперь стало известно, ошибочным. На блоке питания ATX провод Подпитки в режиме Standy +5v цвета лиловый (пурпурный), а фактически такой же фиолетовый как и на разъеме P2 8 pin соединил с этим неизвестным проводом. У них цвет совершено одинаковый. На плате ATX в месте где он был припаян было обозначение USB. В момент включения вилки в розетку в розетке произошел щелчок и тусклая вспышка. Блок питания перестал работать.
+    </p>
+    <p>
+    Компьютер Compaq Deskpro 466 опять отправился в гараж до лучших времён.
+    </p>
+
+    <h2>Как заработать на новый компьютер</h2>
+    <p>А заработать можно не отходя от компьютера! Ссылка на надежный вариант заработка ниже:</p>
+    <figure class="col-sm-12" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="https://dawork.ru/" title="Сайт об заработке" itemprop="contentUrl">
+            <img src="/images/earnings-Internet.svg" alt="Заработок в интернете" itemprop="thumbnailUrl">
+        </a>
+    </figure>
+</article>
+
+<div class="download container">
+    <div class="row">
+        <div class="col-lg-10 col-md-10 col-sm-10 download-text">
+            <h2>Адрес для обратной связи на сайте.</h2>
+        </div>
+        <figure class="col-lg-2 col-md-2 col-sm-2 download-bottom" itemscope itemtype="http://schema.org/ImageObject">
+            <a rel="nofollow" href="https://feed.dawork.ru/feedback/" title="Переход на сайт feed.dawork.ru для написания сообщения">
+                <img src="/images/feedback.png" alt="Кнопка обратная связь"  class="morph" itemprop="contentUrl">
+            </a>
+            <meta itemprop="description" content="Кнопка обратная связь">
+        </figure>
+    </div>
+</div>
+
+<div class="contacts ">
+    <div class="container">
+        <div class="row">
+            <section class="contacts-about col-md-3 col-sm-6 col-xs-12">
+                <h2>О САЙТЕ</h2>
+                <p class="contacts-about-p">
+                    МотоХод - сайт о мобильной маломощной технике, о небольших двигателях. Здесь затронуты некоторые пункты Правил дорожного движения касательно транспорных средств. Имеются ссылки Руководств по экслуатации. Рассказано о двигателе Д8М с мопеда Рига-13...
+                </p>
+            </section>
+            <nav class="contacts-menu col-md-4 col-sm-5 col-xs-6" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <h2>Статьи</h2>
+                <ul class="contacts-about-p">
+                    <li><a class="contacts-menu-link" href="index.html" itemprop="url"><span itemprop="name">Главная</span></a></li>
+                    <li><a class="contacts-menu-link" href="mototexnika.html" itemprop="url"><span itemprop="name">Мототехника</span></a></li>
+                    <li><a class="contacts-menu-link" href="/doc/quide_moped.html" itemprop="url"><span itemprop="name">Руководство по эксплуатации</span></a></li>
+                    <li><a class="contacts-menu-link" href="lodochnyj_motor_lm_1.html" itemprop="url"><span itemprop="name">Лодочный мотор ЛМ-1</span></a></li>
+                    <li><a class="contacts-menu-link" href="ehnergetika.html" itemprop="url"><span itemprop="name">Энергетика</span></a></li>
+                </ul>
+            </nav>
+            <nav class="contacts-browse col-md-2 col-sm-3 col-xs-6" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <h2>Посмотреть</h2>
+                <ul class="contacts-about-p">
+                    <li><a class="contacts-menu-link" href="/doc/guide_moped.pdf" itemprop="url"><span itemprop="name">Мопед Рига-13</span>
+                    </a></li>
+                    <li><a class="contacts-menu-link" href="/doc/lm1.html" itemprop="url"><span itemprop="name">Лодочный мотор ЛМ-1</span>
+                    </a></li>
+                    <li><p class="contacts-menu-link" itemprop="name">Схема электрическая ближнего света</p></li>
+                    <li><a class="contacts-menu-link" href="/zamenit_ehl_schetchik.html" itemprop="url"><span itemprop="name">Электросчетчик 5CM4</span>
+                    </a></li>
+                </ul>
+            </nav>
+            <section class="contacts-connect col-md-3 col-sm-8 col-xs-12">
+                <h2>Связаться с нами</h2>
+                <div class="contacts-connect-list">
+                    <a rel="nofollow" href="https://feed.dawork.ru/feedback/" title="Переход на сайт feed.dawork.ru для написания сообщения"><img class="contacts-connect-img" src="images/linkedin.png" alt="Кнопка обратная связь по электронной почте"></a>
+                    <a rel="nofollow" href="https://join.skype.com/invite/LdbvHAr4F4DF" title="Переход на скайп для общения"><img class="contacts-connect-img" src="images/skype.png" alt="Кнопка для связи по скайпу"></a>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<footer itemscope itemtype="http://schema.org/WPFooter">
+    <meta itemprop="copyrightYear" content="2010">
+    <meta itemprop="author" content="Егоров Валерий">
+    <meta itemprop="copyrightHolder" content="Егоров Валерий">
+    <div class="container">
+        <div class="row">
+            <div class="copy col-lg-9 col-md-9 col-sm-8 col-xs-6">
+                <p>&copy; Copyright 2010 - МотоХод. Все права защищены. Некоторые используемые здесь бесплатные иконки созданы Brankic1979.com. Логотипы клиентов являются собственностью и товарными знаками соответствующих владельцев / компаний.</p>
+            </div>
+            <div class="header-logo col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <p class="header-logo-link">Мото<span class="header-logo-sub">Ход</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(86845880, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/86845880" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>
