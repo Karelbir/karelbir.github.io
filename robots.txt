@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /contact.html
 Disallow: /doc/guide_d8m.pdf
 Disallow: /doc/guide_moped.pdf
 Disallow: /404.html
