@@ -16,7 +16,10 @@ h2 {
   font-size: 18px;   }
 img {
   max-width: 100%;
-  height: auto;}
+  height: auto;
+  padding-bottom: 5px;
+}
+
 ul {
   list-style: none;
   //padding: 0;
